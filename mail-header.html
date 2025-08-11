@@ -4,10 +4,9 @@
         <meta charset="UTF-8" />
         <style>
             .signature-container {
-                width: 600px;
                 max-height: 200;
                 font-family: Arial, sans-serif;
-                background-image: url("https://cer-ufpe.github.io/mail-header-bg_v2.png"); /* Substitua pela URL da sua imagem */
+                background-image: url("https://cer-ufpe.github.io/mail-header-bg_v1.png"); /* Substitua pela URL da sua imagem */
                 background-repeat: no-repeat;
                 background-size: contain;
                 padding: 10px 10px 10px 190px;
@@ -21,8 +20,13 @@
                     255,
                     0.8
                 );  Fundo semi-transparente para legibilidade */
-                padding: 5px;
+                /* padding: 5px; */
                 border-radius: 5px;
+                width: 200px;
+            }
+            .logo-container {
+                width: 100px;
+                vertical-align: bottom;
             }
             .signature-name {
                 font-weight: bold;
@@ -32,19 +36,36 @@
             .signature-title {
                 font-size: 10px;
                 color: #555555;
-                margin-bottom: 8px;
+                font-style: italic;
+                margin: 0;
+            }
+            .signature-location {
+                font-size: 10px;
+                font-weight: bold;
+                color: #143868;
+                margin-top: 4px;
+                margin-bottom: 6px;
             }
             .signature-contact {
                 font-size: 9px;
-                line-height: 0.5;
+                margin: 0;
+            }
+            .signature-contact p {
+                margin: 4px 0;
             }
             .signature-contact a {
                 color: #0066cc;
                 text-decoration: none;
             }
+            .signature-contact img {
+                width: 14px;
+                height: 14px;
+                vertical-align: middle;
+            }
             .signature-logo {
                 margin-top: 10px;
                 text-align: right;
+                width: 150px;
             }
         </style>
     </head>
@@ -57,31 +78,37 @@
         >
             <tr>
                 <td class="signature-content">
-                    <div class="signature-name">Marlos Ribeiro</div>
-                    <div class="signature-title">
-                        <p>Analista de Tecnologia da Informação</p>
-                        <p>Centro de Energias Renováveis <br />
+                    <div class="signature-name">MARLOS RIBEIRO</div>
+                    <div>
+                        <p class="signature-title">Analista de Tecnologia da Informação</p>
+                        <p class="signature-location">Centro de Energias Renováveis <br />
                         da Universidade Federal de Pernambuco</p>
-
-
                     </div>
                     <div class="signature-contact">
                         <p>
+                            <img src="https://cer-ufpe.github.io/phone-icon.png" alt="Phone" />
                             Telefone:
-                            <a href="tel:+5511999999999">+55 11 99999-9999</a>
+                            <a href="tel:+558121267326">+55 81 2126-7326</a>
                         </p>
                         <p>
+                            <img src="https://cer-ufpe.github.io/e-mail-icon.png" alt="e-mail" />
                             Email:
-                            <a href="mailto:seu.email@empresa.com"
-                                >seu.email@empresa.com</a
+                            <a href="mailto:marlos@ufpe.br"
+                                >marlos@ufpe.br</a
                             >
                         </p>
                         <p>
+                            <img src="https://cer-ufpe.github.io/web-icon.png" alt="Telefone" />
                             Website:
-                            <a href="https://www.suaempresa.com"
-                                >www.suaempresa.com</a
+                            <a href="https://cer.ufpe.br"
+                                >http://cer.ufpe.br</a
                             >
                         </p>
+                    </div>
+                </td>
+                <td class="logo-container">
+                    <div>
+                        <img class="signature-logo" src="https://cer-ufpe.github.io/cer-logo.png" alt="Logo do CER-UFPE" />
                     </div>
                 </td>
             </tr>
