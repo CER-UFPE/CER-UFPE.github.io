@@ -18,7 +18,7 @@ curl -s https://raw.githubusercontent.com/CER-UFPE/CER-UFPE.github.io/main/build
 1. Abra o terminal
 2. execute o script:
 ```bash
-curl -s https://raw.githubusercontent.com/CER-UFPE/CER-UFPE.github.io/main/build-mail-header.sh | bash
+bash -c "$(wget -qO- https://raw.githubusercontent.com/CER-UFPE/CER-UFPE.github.io/main/build-mail-header.sh)"
 ```
 3. Siga as instruções exibidas no terminal para preencher as informações do cabeçalho de e-mail.
 4. Um arquivo `email-header.html` será gerado com o cabeçalho de e-mail preenchido.
