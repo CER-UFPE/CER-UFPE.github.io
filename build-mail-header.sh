@@ -21,7 +21,7 @@ fi
 echo
 read -p "Do you want to add your mobile number? (y/n): " ADD_MOBILE
 if [[ "$ADD_MOBILE" == "y" || "$ADD_MOBILE" == "Y" ]]; then
-    read -p "Mobile number [+55 (xx) xxx xxx xxx]: " MOBILE_NUMBER
+    read -p "Mobile number [+xx (xx) xxx xxx xxx]: " MOBILE_NUMBER
 fi
 
 
@@ -107,7 +107,7 @@ HTML_CONTENT+="
     </div>"
 
 # MOBILE PHONE
-if [[ "$HAS_MOBILE" == "y" || "$HAS_MOBILE" == "Y" ]]; then
+if [[ "$ADD_MOBILE" == "y" || "$ADD_MOBILE" == "Y" ]]; then
     HTML_CONTENT+="
         <div style='font-size: 11px; margin-bottom: 2px;'>
         <img src='https://cer-ufpe.github.io/mobile-icon.png' height='15px' alt='Mobile' style='vertical-align: middle;'>
