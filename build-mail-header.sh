@@ -102,7 +102,7 @@ HTML_CONTENT+="
       <!--MUDAR: OFFICE PHONE-->
       <a href='tel:+558121267326' style='color: #1a2e3b; text-decoration: none; font-size: 11px;'>
         <!--MUDAR: OFFICE PHONE-->
-        +55 (81) 2126-7326
+        +55 81 2126-7326
       </a>
     </div>"
 
