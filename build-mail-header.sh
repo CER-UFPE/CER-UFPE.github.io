@@ -68,8 +68,8 @@ HTML_CONTENT="
 
         <!-- LOTACOES -->
         <div style='font-size: 12px; color: #01375b; font-style: italic; font-weight: bold; margin: 10px 0 0 0;'>
+            <span style='font-size: 12px; color: #3c3c3c; font-style: italic; font-weight: bold;'>$JOB_TITLE | </span>
             Center for Renewable Energy
-            <span style='font-size: 12px; color: #3c3c3c; font-style: italic; font-weight: bold;'> | $JOB_TITLE</span>
         </div>
         <div style='font-size: 12px; color: #545454; font-style: italic; margin-bottom:5px;'>
             of the Federal University of Pernambuco (CER-UFPE)
@@ -79,8 +79,8 @@ HTML_CONTENT="
 if [[ "$HAS_SECOND_JOB" == "y" || "$HAS_SECOND_JOB" == "Y" ]]; then
     HTML_CONTENT+="
     <div style='font-size: 12px; color: #01375b; font-style: italic; font-weight: bold; margin: 10px 0 0 0;'>
+        <span style='font-size: 12px; color: #3c3c3c; font-style: italic; font-weight: bold;'>$SECOND_JOB_TITLE | </span>
         $SECOND_JOB_LOCATION
-        <span style='font-size: 12px; color: #3c3c3c; font-style: italic; font-weight: bold;'> | $SECOND_JOB_TITLE</span>
     </div>
     <div style='font-size: 12px; color: #545454; font-style: italic; margin-bottom:5px;'>
         of the $SECOND_JOB_ORGANIZATION
